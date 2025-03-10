@@ -56,6 +56,10 @@ fetch("travelrecommendation.json")
             showResult(city.name, city.imageUrl, city.description);
             notfound = false;
           }
+          else if (searchQuery.toLowerCase() === 'country' || searchQuery.toLowerCase() === 'countries') {
+            showResult(city.name, city.imageUrl, city.description);
+            notfound = false;
+          }
         });
       });
 
@@ -64,6 +68,10 @@ fetch("travelrecommendation.json")
           showResult(temple.name, temple.imageUrl, temple.description);
           notfound = false;
         }
+        else if (searchQuery.toLowerCase() === 'temple' || searchQuery.toLowerCase() === 'temples') {
+            showResult(city.name, city.imageUrl, city.description);
+            notfound = false;
+          }
       });
 
       data.beaches.map((beach) => {
@@ -71,6 +79,10 @@ fetch("travelrecommendation.json")
           showResult(beach.name, beach.imageUrl, beach.description);
           notfound = false;
         }
+        else if (searchQuery.toLowerCase() === 'beach' || searchQuery.toLowerCase() === 'beaches') {
+            showResult(city.name, city.imageUrl, city.description);
+            notfound = false;
+          }
       });
 
       if (notfound) {
