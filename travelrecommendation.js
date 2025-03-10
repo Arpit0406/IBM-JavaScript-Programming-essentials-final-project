@@ -69,7 +69,7 @@ fetch("travelrecommendation.json")
           notfound = false;
         }
         else if (searchQuery.toLowerCase() === 'temple' || searchQuery.toLowerCase() === 'temples') {
-            showResult(city.name, city.imageUrl, city.description);
+            showResult(temple.name, temple.imageUrl, temple.description);
             notfound = false;
           }
       });
@@ -80,7 +80,7 @@ fetch("travelrecommendation.json")
           notfound = false;
         }
         else if (searchQuery.toLowerCase() === 'beach' || searchQuery.toLowerCase() === 'beaches') {
-            showResult(city.name, city.imageUrl, city.description);
+            showResult(beach.name, beach.imageUrl, beach.description);
             notfound = false;
           }
       });
